@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout-flex</title>
+    <style>
+
+
+        .flex-container{
+            background-color: #eee;
+            width: 500px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            padding: 20px;
+        }
+        
+        .flex-items {
+            height: 100px;
+            text-align: center;
+            line-height: 100px;
+            color: white;
+        }
+
+        .wrapper {
+            display: flex;
+            gap: 15px;
+        }
+
+        header {
+            background-color: skyblue;
+            
+        }
+
+        section {
+            background-color: royalblue;
+            width: 70%;
+        }
+
+        aside {
+            background-color: yellowgreen;
+            width: 30%;
+        }
+
+        footer {
+            background-color: seagreen;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <header class="flex-items">header</header>
+        <div class="wrapper">
+            <section class="flex-items">section</section>
+            <aside class="flex-items">aside</aside>
+        </div>
+        <footer class="flex-items">footer</footer>
+    </div>
+</body>
+</html>
