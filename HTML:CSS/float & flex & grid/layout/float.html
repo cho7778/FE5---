@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout-float</title>
+    <style>
+        .flex-container {
+            width: 500px;
+            background-color: #eee;
+            padding: 20px;
+        }
+
+        .flex-items {
+            height: 100px;
+            color: white;
+            text-align: center;
+            line-height: 100px;
+        }
+
+        header {
+            background-color: skyblue;
+        }
+        section {
+            background-color: royalblue;
+            float: left;
+            width: 336px;
+            margin: 20px 10px 20px 0;
+        }
+        aside {
+            background-color: yellowgreen;
+            float: right;
+            width: 144px;
+            margin: 20px 0 20px 10px;
+        }
+        footer {
+            background-color: seagreen;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <header class="flex-items">header</header>
+        <section class="flex-items">section</section>
+        <aside class="flex-items">aside</aside>
+        <footer class="flex-items">footer</footer>
+    </div>
+</body>
+</html>
