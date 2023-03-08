@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout-grid</title>
+    <style>
+        .grid-container {
+            background-color: #eee;
+            width: 500px;
+            gap: 20px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2,1fr);
+            grid-template-areas: 
+            "a a"
+            "b c"
+            "d d";
+            padding: 20px;
+        }
+        .grid-items {
+            height: 100px;
+            color: white;
+            text-align: center;
+            line-height: 100px;
+        }
+        header {
+            background-color: skyblue;
+            grid-area: a;
+        }
+        section {
+            background-color: royalblue;
+            grid-area: b;
+            height: 200px;
+        }
+        aside {
+            background-color: yellowgreen;
+            grid-area: c;
+            height: 200px;
+        }
+        footer {
+            background-color: seagreen;
+            grid-area: d;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <header class="grid-items">header</header>
+        <section class="grid-items">section</section>
+        <aside class="grid-items">aside</aside>
+        <footer class="grid-items">footer</footer>
+    </div>
+</body>
+</html>
